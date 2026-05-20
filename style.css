@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.kontener {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+.informacio-sor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.kviz-doboz h2 {
+    margin-bottom: 20px;
+    color: #334155;
+}
+
+.valaszok {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.valasz-gomb {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e2e8f0;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.valasz-gomb:hover {
+    background-color: #cbd5e1;
+}
+
+.helyes {
+    background-color: #22c55e !important;
+    color: white;
+}
+
+.rossz {
+    background-color: #ef4444 !important;
+    color: white;
+}
+
+#kovetkezo-gomb {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+#kovetkezo-gomb:hover {
+    background-color: #1d4ed8;
+}
+
+.eredmeny {
+    text-align: center;
+}
+
+.rejtett {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .kontener {
+        padding: 20px;
+    }
+
+    .informacio-sor {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
