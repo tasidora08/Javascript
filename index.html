@@ -6,6 +6,31 @@
     <title>Kvíz</title>
 </head>
 <body>
-    
+    <main class="kontener">
+        <h1>Kvíz Játék</h1>
+
+        <section class="informacio-sor">
+            <p>Pontszám: <span id="pontszam">0</span></p>
+            <p>Kérdés: <span id="kerdes-szam">1</span></p>
+        </section>
+
+        <section class="kviz-doboz">
+            <h2 id="kerdes">Betöltés...</h2>
+
+            <div class="valaszok" id="valaszok">
+                <!-- JavaScript tölti be -->
+            </div>
+
+            <button id="kovetkezo-gomb">Következő kérdés</button>
+        </section>
+
+        <section class="eredmeny rejtett" id="eredmeny">
+            <h2>Vége a játéknak!</h2>
+            <p>Elért pontszám: <span id="vegso-pontszam"></span></p>
+            <button onclick="ujrainditas()">Újraindítás</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
