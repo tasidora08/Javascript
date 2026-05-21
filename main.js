@@ -216,64 +216,114 @@ const kvizek = {
             helyesValasz: "1955"
         },
         {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
+            kerdes: "Volt-e iskolánk történelmében bármikor levelező képzés?",
+            valaszok: ["Igen", "Nem"],
+            helyesValasz: "Igen"
         },
         {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
+            kerdes: "Melyik tanévben lett tornaterme az iskolának?",
+            valaszok: ["Már az 1. tanévben", "5. tanévben", "35. tanévben", "75. tanévben"],
+            helyesValasz: "75. tanévben"
         },
         {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
+            kerdes: "Mikor indult német két tanítási nyelvű osztály?",
+            valaszok: ["1989/90-es tanévtől", "2002/03-as tanévtől", "2008/09-es tanévtől", "2020/21-es tanévtől"],
+            helyesValasz: "2002/03-as tanévtől"
         },
         {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
+            kerdes: "Melyik évben szerezte meg iskolánk az ECDL vizsgáztatási jogosultságot?",
+            valaszok: ["1989-ben", "1990-ben", "1998-ban", "2002-ben"],
+            helyesValasz: "1998-ban"
         },
         {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
+            kerdes: "Mikortól ECDL vizsgaközpont az iskola?",
+            valaszok: ["1990-től", "1998-tól", "2005-től", "2018-tól"],
+            helyesValasz: "2005-től"
         },
         {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
+            kerdes: "Mikortól használhatja iskolánk 'A Debreceni Egyetem Partneriskolája' címet?",
+            valaszok: ["2004-től", "2008-tól", "2015-től", "2023-tól"],
+            helyesValasz: "2004-től"
         },
         {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
+            kerdes: "Mikortól viseli iskolánk a Debreceni SZC Mechwart András Gépipari és Informatikai Szakgimnáziuma nevet?",
+            valaszok: ["2005. szeptember 1-től", "2010. szeptember 1-től", "2015. július 1-től", "2016. szeptember 1-től"],
+            helyesValasz: "2016. szeptember 1-től"
         },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        }
-        
     ],
 
     tablok: [
+        
         {
-            kerdes: "Mi Magyarország fővárosa?",
-            valaszok: ["Budapest", "Szeged", "Debrecen", "Pécs"],
-            helyesValasz: "Budapest"
-        }
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
     ],
 
     matek: [
