@@ -289,19 +289,19 @@ const kvizek = {
             helyesValasz: "Bene Tibor"
         },
         {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
+            kerdes: "Keressétek meg azt a tablót, ahol egy igazolást ábrázol a háttér. Mikor találkozik újra az az osztály?",
+            valaszok: ["2000-ben", "2005-ben", "2013-ban", "2014-ben"],
+            helyesValasz: "2000-ben"
         },
         {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
+            kerdes: "Iskolánkba járt Komzsik János (Jani a TheVR-ból). Keressétek meg a tablójukat! Melyik két terem közötti falszakaszra van kirakva?",
+            valaszok: ["A büfé mellett a lépcsőnél", "33-34-es termek között", "25-26-os termek között", "29-es terem mellett"],
+            helyesValasz: "25-26-os termek között"
         },
         {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
+            kerdes: "Hány lány osztálytársa volt Papp Mihály tanár úrnak?",
+            valaszok: ["Nem voltak lány osztálytársai", "1 lány", "3 lány", "5 lány"],
+            helyesValasz: "1 lány"
         },
         {
             kerdes: "",
