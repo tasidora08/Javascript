@@ -246,14 +246,48 @@ const kvizek = {
             helyesValasz: "2004-től"
         },
         {
-            kerdes: "Mikortól viseli iskolánk a Debreceni SZC Mechwart András Gépipari és Informatikai Szakgimnáziuma nevet?",
+            kerdes: "Mikortól viseli iskolánk a Debreceni SZC Mechwart András Gépipari és Informatikai Szakgimnáziuma nevet?", 
             valaszok: ["2005. szeptember 1-től", "2010. szeptember 1-től", "2015. július 1-től", "2016. szeptember 1-től"],
             helyesValasz: "2016. szeptember 1-től"
         },
     ],
 
     tablok: [
-        
+        {
+            kerdes: "Hány tablón szerepel Nagy Miklós tanár úr? (Ötre kerekítéssel",
+            valaszok: ["30", "35", "40", "45"],
+            helyesValasz: "45"
+        },
+        {
+            kerdes: "Melyik a legrégebbi tabló (azt az évszámot nézve, amikor az az osztály elkezdett ide járni)?",
+            valaszok: ["1949", "1974", "1956", "1951"],
+            helyesValasz: "1951"
+        },
+        {
+            kerdes: "Hány olyan tabló van, amely az iskola 100. tanévében elballagott osztályok tablója?  (2008-ban végeztek)",
+            valaszok: ["2", "3", "4", "5"],
+            helyesValasz: "4"
+        },
+        {
+            kerdes: "Hány tablón szerepel Dr. Barcsa Lajos igazgató úr, még nem igazgatóként, hanem tanárként?",
+            valaszok: ["18", "19", "20", "23"],
+            helyesValasz: "20"
+        },
+        {
+            kerdes: "Hány olyan tablót találatok, ahol a diákok levelező tagozaton végeztek?",
+            valaszok: ["6", "7", "8", "9"],
+            helyesValasz: "6"
+        },
+        {
+            kerdes: "Hány tablón szerepel a Mechwart logó valamilyen formában? ",
+            valaszok: ["30", "33", "36", "39"],
+            helyesValasz: "36"
+        },
+        {
+            kerdes: "Keressétek meg azt a tablót, ahol egy műszaki rajz a háttér, már kijavítva (a hibák pirossal jelölve). Ki volt az osztályfőnökük?",
+            valaszok: ["Szőllősi Irén", "Bene Tibor", "Bánkné Zsebők Piroska", "Kiss Albert"],
+            helyesValasz: "Bene Tibor"
+        },
         {
             kerdes: "",
             valaszok: ["", "", "", ""],
