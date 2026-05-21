@@ -302,69 +302,34 @@ const kvizek = {
             kerdes: "Hány lány osztálytársa volt Papp Mihály tanár úrnak?",
             valaszok: ["Nem voltak lány osztálytársai", "1 lány", "3 lány", "5 lány"],
             helyesValasz: "1 lány"
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
-        {
-            kerdes: "",
-            valaszok: ["", "", "", ""],
-            helyesValasz: ""
-        },
+        }
     ],
 
     matek: [
         {
-            kerdes: "Mennyi 5 × 6?",
+            kerdes: "Mennyi 5 * 6?",
             valaszok: ["11", "25", "30", "35"],
             helyesValasz: "30"
-        }
+        },
+        {
+            kerdes: "Mennyi 9 - 6?",
+            valaszok: ["3", "5", "7", "8"],
+            helyesValasz: "3"
+        },
+        {
+            kerdes: "Mennyi 90 / 9?",
+            valaszok: ["5", "9", "10", "11"],
+            helyesValasz: "10"
+        },
+        {
+            kerdes: "Mennyi 81 / 9?",
+            valaszok: ["9", "10", "11", "30"],
+            helyesValasz: "9"
+        },
+        {
+            kerdes: "Mennyi 5 * 5?",
+            valaszok: ["15", "25", "125", "625"],
+            helyesValasz: "25"
+        },
     ]
 };
