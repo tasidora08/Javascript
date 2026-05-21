@@ -14,6 +14,29 @@ body {
     padding: 20px;
 }
 
+#valaszt {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.kviz-valasztas {
+    height: 50px;
+    width: 300px;
+    display: flexbox;
+    flex-direction: row;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    margin: 10px;
+    font-weight: bold;
+    border: 3px solid white;
+}
+.kviz-valasztas:hover {
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+
 .kontener {
     background-color: white;
     width: 100%;

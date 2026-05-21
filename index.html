@@ -15,19 +15,21 @@
         </section>
         <section class="kezdo-kepernyo">
 
-            <h2>Válassz kategóriát!</h2>
+            <h2 id="valaszt">Válassz kategóriát!</h2>
 
-            <button onclick="kvizInditas('iskola')">
+            <div class="gombok">
+                <button onclick="kvizInditas('iskola')" class="kviz-valasztas">
                 A Mechwart történelme (15 kérdés)
             </button>
 
-            <button onclick="kvizInditas('tablok')">
+            <button onclick="kvizInditas('tablok')" class="kviz-valasztas">
                 A Mechwart tablói (10 kérdés)
             </button>
 
-            <button onclick="kvizInditas('matek')">
+            <button onclick="kvizInditas('matek')" class="kviz-valasztas">
                 Matematika (5 kérdés)
             </button>
+            </div>
 
         </section>
         <section class="kviz-doboz rejtett">
@@ -42,7 +44,7 @@
         <section class="eredmeny rejtett" id="eredmeny">
             <h2>Vége a játéknak!</h2>
             <p>Elért pontszám: <span id="vegso-pontszam"></span></p>
-            <button onclick="ujrainditas()">Újraindítás</button>
+            <button onclick="ujrainditas()" id="ujra">Újraindítás</button>
         </section>
     </main>
 
