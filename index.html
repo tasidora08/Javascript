@@ -11,11 +11,27 @@
 
         <section class="informacio-sor">
             <p>Pontszám: <span id="pontszam">0</span></p>
-            <p>Kérdés: <span id="kerdes-szam">1</span></p>
+            <p>Kérdés: <span id="kerdes-szam">0</span></p>
         </section>
+        <section class="kezdo-kepernyo">
 
+            <h2>Válassz kategóriát!</h2>
+
+            <button onclick="kvizInditas('iskola')">
+                A Mechwart történelme (15 kérdés)
+            </button>
+
+            <button onclick="kvizInditas('tablok')">
+                A Mechwart tablói (20 kérdés)
+            </button>
+
+            <button onclick="kvizInditas('matek')">
+                Matematika (5 kérdés)
+            </button>
+
+        </section>
         <section class="kviz-doboz">
-            <h2 id="kerdes">Betöltés...</h2>
+            <h2 id="kerdes"></h2>
 
             <div class="valaszok" id="valaszok">
                 <!-- JavaScript tölti be -->

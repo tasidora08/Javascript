@@ -1,3 +1,4 @@
+let aktualisKerdesek = [];
 const kerdesek = [
     {
         kerdes: "Melyik a világ legnagyobb óceánja?",
@@ -152,3 +153,134 @@ function ujrainditas() {
 }
 
 kerdesBetoltese();
+
+function kvizInditas(kategoria) {
+
+    aktualisKerdesek = kvizek[kategoria];
+
+    document.querySelector(".kezdo-kepernyo").classList.add("rejtett");
+
+    document.querySelector(".kviz-doboz").classList.remove("rejtett");
+
+    kerdesBetoltese();
+}
+
+/* Kérdések */
+
+const kvizek = {
+
+    iskola: [
+        {
+            kerdes: "Melyik teremben van informatika?",
+            valaszok: ["101", "202", "305", "110"],
+            helyesValasz: "305"
+        },
+        {
+            kerdes: "Ki volt az iskola első igazgatója?",
+            valaszok: ["Kiszely Árpád", "Mechwart András", "Sztankay Farkas Béla", "Újvárosi Imre"],
+            helyesValasz: "Sztankay Farkas Béla"
+        },
+        {
+            kerdes: "Hány igazgatója volt a Mechwartnak eddig? (A jelenlegit is beleszámolva)",
+            valaszok: ["9", "10", "13", "14"],
+            helyesValasz: "10"
+        },
+        {
+            kerdes: "Teljesítettek-e az iskola nevelői közül katonai szolgálatot az első világháború idején?",
+            valaszok: ["Igen", "Nem"],
+            helyesValasz: "Igen"
+        },
+        {
+            kerdes: "Volt-e szerepe a Mechwartnak az első világháború idején?",
+            valaszok: ["Igen, az iskola katonákat képzett az első világháború végéig", "Nem, pár nevelő és diák részt vett a háborúban, de a tanítás az iskolában folyt tovább", "Igen, az iskolában hadi kórház volt, és a tanműhelyekben haditermelés is folyt", "Az első világháború idején a Mechwart épülete csak üresen állt, mivel a diákok és a tanárok is harcoltak"],
+            helyesValasz: "Igen, az iskolában hadi kórház volt, és a tanműhelyekben haditermelés is folyt"
+        },
+        {
+            kerdes: "Mikor tért át iskolánk a hároméves képzésre? (1940 előtt)",
+            valaszok: ["1924/25. tanévtől", "1935/36. tanévtől", "1938/39. tanévtől", "1940 előtt az iskolában nem volt hároméves képzés"],
+            helyesValasz: "1924/25. tanévtől"
+        },
+        {
+            kerdes: "Kapott-e iskolánk a második világháború idején súlyos bombatalálatot?",
+            valaszok: ["Igen", "Nem"],
+            helyesValasz: "Igen"
+        },
+        {
+            kerdes: "Mely igazgatónk irányítása alatt épültek meg a mai 9-es, 19-es és 29-es tantermek?",
+            valaszok: ["László Árpád", "Újvárosi Imre", "Dr. Kárpáti László", "Kövesdy László"],
+            helyesValasz: "Kövesdy László"
+        },
+        {
+            kerdes: "Melyik évben vette fel iskolánk Mechwart András nevét?",
+            valaszok: ["1908", "1939", "1955", "1989"],
+            helyesValasz: "1955"
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        },
+        {
+            kerdes: "",
+            valaszok: ["", "", "", ""],
+            helyesValasz: ""
+        }
+        
+    ],
+
+    tablok: [
+        {
+            kerdes: "Mi Magyarország fővárosa?",
+            valaszok: ["Budapest", "Szeged", "Debrecen", "Pécs"],
+            helyesValasz: "Budapest"
+        }
+    ],
+
+    matek: [
+        {
+            kerdes: "Mennyi 5 × 6?",
+            valaszok: ["11", "25", "30", "35"],
+            helyesValasz: "30"
+        }
+    ]
+};
