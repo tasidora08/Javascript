@@ -185,27 +185,17 @@ if (mentettPontszam) {
 }
 
 function kerdesBetoltese() {
-
     valaszokElem.innerHTML = "";
-
     const aktualisKerdes = aktualisKerdesek[aktualisKerdesIndex];
-
     kerdesElem.textContent = aktualisKerdes.kerdes;
-
     kerdesSzamElem.textContent = aktualisKerdesIndex + 1;
-
     aktualisKerdes.valaszok.forEach(valasz => {
-
         const gomb = document.createElement("button");
-
         gomb.textContent = valasz;
-
         gomb.classList.add("valasz-gomb");
-
         gomb.addEventListener("click", () => {
             valaszEllenorzes(gomb, aktualisKerdes.helyesValasz);
         });
-
         valaszokElem.appendChild(gomb);
     });
 }
@@ -213,89 +203,59 @@ function kerdesBetoltese() {
 function valaszEllenorzes(gomb, helyesValasz) {
 
     const osszesGomb = document.querySelectorAll(".valasz-gomb");
-
     osszesGomb.forEach(gombElem => {
         gombElem.disabled = true;
-
         if (gombElem.textContent === helyesValasz) {
             gombElem.classList.add("helyes");
         }
     });
-
     if (gomb.textContent === helyesValasz) {
-
         gomb.classList.add("helyes");
-
         pontszam++;
-
         pontszamElem.textContent = pontszam;
-
         localStorage.setItem("pontszam", pontszam);
-
     } else {
         gomb.classList.add("rossz");
     }
-
     kovetkezoGomb.style.display = "block";
 }
-
 kovetkezoGomb.addEventListener("click", () => {
-
     aktualisKerdesIndex++;
-
     if (aktualisKerdesIndex < aktualisKerdesek.length) {
-
         kerdesBetoltese();
-
         kovetkezoGomb.style.display = "none";
-
     } else {
-
         jatekVege();
     }
 });
 
 function jatekVege() {
-
     document.querySelector(".kviz-doboz").classList.add("rejtett");
-
     eredmenyElem.classList.remove("rejtett");
-
     vegsoPontszamElem.textContent = pontszam;
 }
 
 function ujrainditas() {
-
     localStorage.removeItem("pontszam");
-
     pontszam = 0;
-
     aktualisKerdesIndex = 0;
-
     pontszamElem.textContent = pontszam;
-
     eredmenyElem.classList.add("rejtett");
-
     document.querySelector(".kviz-doboz").classList.remove("rejtett");
-
     kerdesBetoltese();
-
     kovetkezoGomb.style.display = "none";
 }
 
 function kvizInditas(kategoria) {
-
     aktualisKerdesek = kvizek[kategoria];
-
     aktualisKerdesIndex = 0;
-
     pontszam = 0;
-
     pontszamElem.textContent = pontszam;
-
     document.querySelector(".kezdo-kepernyo").classList.add("rejtett");
-
     document.querySelector(".kviz-doboz").classList.remove("rejtett");
-
     kerdesBetoltese();
+}
+
+function vissza() {
+
 }
