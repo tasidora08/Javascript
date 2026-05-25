@@ -8,47 +8,40 @@
 <body>
     <main class="kontener">
         <h1>Kvíz Játék</h1>
-
         <section class="informacio-sor">
             <p>Pontszám: <span id="pontszam">0</span></p>
             <p>Kérdés: <span id="kerdes-szam">0</span></p>
         </section>
         <section class="kezdo-kepernyo">
-
             <h2 id="valaszt">Válassz kategóriát!</h2>
-
             <div class="gombok">
-                <button onclick="kvizInditas('iskola')" class="kviz-valasztas">
+                <button onclick="kvizInditas('iskola')" class="kviz-valasztas" style="display: block; margin: auto;">
                 A Mechwart történelme (15 kérdés)
             </button>
-
-            <button onclick="kvizInditas('tablok')" class="kviz-valasztas">
+            <button onclick="kvizInditas('tablok')" class="kviz-valasztas" style="display: block; margin: auto;">
                 A Mechwart tablói (10 kérdés)
             </button>
-
-            <button onclick="kvizInditas('matek')" class="kviz-valasztas">
+            <button onclick="kvizInditas('matek')" class="kviz-valasztas" style="display: block; margin: auto;">
                 Matematika (5 kérdés)
             </button>
             </div>
-
         </section>
         <section class="kviz-doboz rejtett">
             <h2 id="kerdes">Betöltés...</h2>
-
             <div class="valaszok" id="valaszok">
             </div>
-
             <button id="kovetkezo-gomb">Következő kérdés</button>
         </section>
-
         <section class="eredmeny rejtett" id="eredmeny">
             <h2>Vége a játéknak!</h2>
+            <br>
             <p>Elért pontszám: <span id="vegso-pontszam"></span></p>
-            <button onclick="ujrainditas()" id="ujra">Újraindítás</button>
+            <br>
+            <button onclick="ujrainditas()" id="ujra" style="display: block; margin: auto;">Újraindítás</button>
+            <br>
+            <button onclick="vissza()" id="vissza" style="display: block; margin: auto;">Vissza a kvízekhez</button>
         </section>
     </main>
-
-    
     <script src="main.js"></script>
 </body>
 </html>
