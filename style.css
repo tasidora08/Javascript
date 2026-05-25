@@ -111,8 +111,38 @@ h1 {
     background-color: #1d4ed8;
 }
 
-.eredmeny {
-    text-align: center;
+#ujra {
+    height: 50px;
+    width: 300px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    margin: 10px;
+    font-weight: bold;
+    border: 3px solid white;
+}
+
+#ujra:hover {
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+}
+
+#vissza {
+    height: 50px;
+    width: 300px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    margin: 10px;
+    font-weight: bold;
+    border: 3px solid white;
+}
+
+#vissza:hover {
+    color: black;
+    background-color: white;
+    border: 3px solid black;
 }
 
 .rejtett {
