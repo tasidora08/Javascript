@@ -1,8 +1,6 @@
 let aktualisKerdesek = [];
-/* Kérdések */
 
 const kvizek = {
-
     iskola: [
         {
             kerdes: "Ki volt az iskola első igazgatója?",
@@ -166,19 +164,13 @@ const kvizek = {
 const kerdesElem = document.getElementById("kerdes");
 const valaszokElem = document.getElementById("valaszok");
 const kovetkezoGomb = document.getElementById("kovetkezo-gomb");
-
 const pontszamElem = document.getElementById("pontszam");
 const kerdesSzamElem = document.getElementById("kerdes-szam");
-
 const eredmenyElem = document.getElementById("eredmeny");
 const vegsoPontszamElem = document.getElementById("vegso-pontszam");
-
 let aktualisKerdesIndex = 0;
 let pontszam = 0;
-
-
 const mentettPontszam = localStorage.getItem("pontszam");
-
 if (mentettPontszam) {
     pontszam = Number(mentettPontszam);
     pontszamElem.textContent = pontszam;
@@ -201,7 +193,6 @@ function kerdesBetoltese() {
 }
 
 function valaszEllenorzes(gomb, helyesValasz) {
-
     const osszesGomb = document.querySelectorAll(".valasz-gomb");
     osszesGomb.forEach(gombElem => {
         gombElem.disabled = true;
@@ -214,7 +205,8 @@ function valaszEllenorzes(gomb, helyesValasz) {
         pontszam++;
         pontszamElem.textContent = pontszam;
         localStorage.setItem("pontszam", pontszam);
-    } else {
+    } 
+    else {
         gomb.classList.add("rossz");
     }
     kovetkezoGomb.style.display = "block";
@@ -224,7 +216,8 @@ kovetkezoGomb.addEventListener("click", () => {
     if (aktualisKerdesIndex < aktualisKerdesek.length) {
         kerdesBetoltese();
         kovetkezoGomb.style.display = "none";
-    } else {
+    } 
+    else {
         jatekVege();
     }
 });
@@ -257,5 +250,11 @@ function kvizInditas(kategoria) {
 }
 
 function vissza() {
-
+    pontszam = 0;
+    aktualisKerdesIndex = 0;
+    pontszamElem.textContent = pontszam;
+    eredmenyElem.classList.add("rejtett");
+    document.querySelector(".kviz-doboz").classList.add("rejtett");
+    document.querySelector(".kezdo-kepernyo").classList.remove("rejtett");
+    localStorage.removeItem("pontszam");
 }
