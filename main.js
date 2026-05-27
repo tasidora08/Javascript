@@ -250,9 +250,6 @@ function kvizInditas(kategoria) {
 }
 
 function vissza() {
-    pontszam = 0;
-    aktualisKerdesIndex = 0;
-    pontszamElem.textContent = pontszam;
     eredmenyElem.classList.add("rejtett");
     document.querySelector(".kviz-doboz").classList.add("rejtett");
     document.querySelector(".kezdo-kepernyo").classList.remove("rejtett");
