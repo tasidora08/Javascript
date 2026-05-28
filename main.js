@@ -81,7 +81,7 @@ const kvizek = {
 
     tablok: [
         {
-            kerdes: "Hány tablón szerepel Nagy Miklós tanár úr? (Ötre kerekítéssel",
+            kerdes: "Hány tablón szerepel Nagy Miklós tanár úr? (Ötre kerekítéssel)",
             valaszok: ["30", "35", "40", "45"],
             helyesValasz: "45"
         },
