@@ -1,5 +1,3 @@
-let aktualisKerdesek = [];
-
 const kvizek = {
     iskola: [
         {
@@ -168,6 +166,7 @@ const pontszamElem = document.getElementById("pontszam");
 const kerdesSzamElem = document.getElementById("kerdes-szam");
 const eredmenyElem = document.getElementById("eredmeny");
 const vegsoPontszamElem = document.getElementById("vegso-pontszam");
+let aktualisKerdesek = [];
 let aktualisKerdesIndex = 0;
 let pontszam = 0;
 const mentettPontszam = localStorage.getItem("pontszam");
