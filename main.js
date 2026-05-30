@@ -255,3 +255,12 @@ function vissza() {
     document.querySelector(".kezdo-kepernyo").classList.remove("rejtett");
     localStorage.removeItem("pontszam");
 }
+function DarkMode(){
+    const darkCheckbox = document.getElementById("darkModeButton");
+    if (darkCheckbox.checked){
+        
+    }
+    else if(!darkCheckbox.checked){
+        
+    }
+}
