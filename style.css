@@ -29,10 +29,11 @@ body {
     background-color: var(--lightmode-darkmode-background);
     border-radius: 25px;
     padding: 10px;
+    padding-left: 20px;
 }
 
 input[type="checkbox"]{
-    width: 20px;
+    width: 30px;
 }
 
 #valaszt {
