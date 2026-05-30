@@ -258,9 +258,9 @@ function vissza() {
 function DarkMode(){
     const darkCheckbox = document.getElementById("darkModeButton");
     if (darkCheckbox.checked){
-        
+        document.body.classList.add("dark-mode");
     }
     else if(!darkCheckbox.checked){
-        
+        document.body.classList.remove("dark-mode");
     }
 }

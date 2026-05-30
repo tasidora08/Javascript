@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 :root{
-    --varnamehere : rgb(200,200, 200);
+    --lightmode-darkmode-background : rgb(200,200, 200);
+    --lightmode-kvizvalasztas-font-color: white;
+    --lightmode-kvizvalasztas-background-color: black;
+    --lightmode-kvizvalasztas-border: black;
 }
 body {
     font-family: Arial, sans-serif;
@@ -23,7 +26,7 @@ body {
     justify-content: space-evenly;
     width: 100px;
     height: 50px;
-    background-color: var(--varnamehere);
+    background-color: var(--lightmode-darkmode-background);
     border-radius: 25px;
     padding: 10px;
 }
@@ -182,4 +185,37 @@ h1 {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .kontener {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p {
+    color: white;
+}
+
+.dark-mode .valasz-gomb {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .valasz-gomb:hover {
+    background-color: #444;
+}
+
+.dark-mode #kovetkezo-gomb {
+    background-color: #0d6efd;
+}
+
+.dark-mode #darkMode {
+    background-color: #444;
 }
