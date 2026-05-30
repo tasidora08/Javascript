@@ -44,7 +44,7 @@ input[type="checkbox"]{
 }
 
 .kviz-valasztas {
-    height: 50px;
+    height: 45px;
     width: 300px;
     display: flexbox;
     flex-direction: row;
