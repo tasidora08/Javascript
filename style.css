@@ -179,6 +179,26 @@ h1 {
     display: none;
 }
 
+@media (min-width: 400px) {
+    .kontener {
+        padding: 20px;
+    }
+
+    .informacio-sor {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    body {
+        font-size: 1.3rem;
+    }
+
+    #darkMode {
+        height: 75px;
+        width: 130px;
+    }
+}
+
 @media (max-width: 600px) {
     .kontener {
         padding: 20px;
