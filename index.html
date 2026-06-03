@@ -19,14 +19,17 @@
         <section class="kezdo-kepernyo">
             <h2 id="valaszt">Válassz kategóriát!</h2>
             <div class="gombok">
-                <button onclick="kvizInditas('iskola')" class="kviz-valasztas" style="display: block; margin: auto;">
+                <button onclick="kvizInditas('iskola')" class="kviz-valasztas">
                 A Mechwart történelme (15 kérdés)
             </button>
-            <button onclick="kvizInditas('tablok')" class="kviz-valasztas" style="display: block; margin: auto;">
+            <button onclick="kvizInditas('tablok')" class="kviz-valasztas">
                 A Mechwart tablói (10 kérdés)
             </button>
-            <button onclick="kvizInditas('matek')" class="kviz-valasztas" style="display: block; margin: auto;">
+            <button onclick="kvizInditas('matek')" class="kviz-valasztas">
                 Matematika (5 kérdés)
+            </button>
+            <button onclick="kvizInditas('matek10')" class="kviz-valasztas">
+                Matematika (10 kérdés)
             </button>
             </div>
         </section>
@@ -41,11 +44,12 @@
             <br>
             <p>Elért pontszám: <span id="vegso-pontszam"></span></p>
             <br>
-            <button onclick="ujrainditas()" id="ujra" style="display: block; margin: auto;">Újraindítás</button>
+            <button onclick="ujrainditas()" id="ujra">Újraindítás</button>
             <br>
-            <button onclick="vissza()" id="vissza" style="display: block; margin: auto;">Vissza a kvízekhez</button>
+            <button onclick="vissza()" id="vissza">Vissza a kvízekhez</button>
         </section>
     </main>
     <script src="main.js"></script>
 </body>
 </html>
+<!--style="display: block; margin: auto;->
