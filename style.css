@@ -179,6 +179,14 @@ h1 {
     display: none;
 }
 
+button {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    
+}
+
 @media (min-width: 400px) {
     .kontener {
         padding: 20px;
