@@ -19,18 +19,27 @@
         <section class="kezdo-kepernyo">
             <h2 id="valaszt">Válassz kategóriát!</h2>
             <div class="gombok">
-                <button onclick="kvizInditas('iskola')" class="kviz-valasztas">
-                A Mechwart történelme (15 kérdés)
-            </button>
-            <button onclick="kvizInditas('tablok')" class="kviz-valasztas">
-                A Mechwart tablói (10 kérdés)
-            </button>
-            <button onclick="kvizInditas('matek')" class="kviz-valasztas">
-                Matematika (5 kérdés)
-            </button>
-            <button onclick="kvizInditas('matek10')" class="kviz-valasztas">
-                Matematika (10 kérdés)
-            </button>
+                <div id="tizrnot">
+                    <p>15 kérdést tartalmazó kvízek:</p>
+                    <button onclick="kvizInditas('iskola')" class="kviz-valasztas">
+                        A Mechwart történelme 
+                    </button>   
+                </div>
+                <div id="tiz">
+                    <p>10 kérdést tartalmazó kvízek:</p>
+                    <button onclick="kvizInditas('tablok')" class="kviz-valasztas">
+                        A Mechwart tablói 
+                    </button>
+                    <button onclick="kvizInditas('matek10')" class="kviz-valasztas">
+                        Matematika 
+                    </button>
+                </div>
+                <div id="ot">                    
+                    <p>5 kérdést tartalmazó kvízek:</p>
+                    <button onclick="kvizInditas('matek')" class="kviz-valasztas">
+                        Matematika 
+                    </button>
+                </div>    
             </div>
         </section>
         <section class="kviz-doboz rejtett">
@@ -52,4 +61,3 @@
     <script src="main.js"></script>
 </body>
 </html>
-<!--style="display: block; margin: auto;->

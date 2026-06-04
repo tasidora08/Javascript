@@ -4,6 +4,7 @@
     box-sizing: border-box;
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
 
+
 }
 :root{
     --lightmode-darkmode-background : rgb(200,200, 200);
@@ -11,6 +12,7 @@
     --lightmode-kvizvalasztas-background-color: black;
     --lightmode-kvizvalasztas-border: black;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f1f5f9;
@@ -20,6 +22,7 @@ body {
     min-height: 100vh;
     padding: 20px;
 }
+
 #darkMode{
     position: fixed;
     display: flex;
@@ -34,6 +37,26 @@ body {
     padding-left: 20px;
 }
 
+.gombok {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#ujra,
+#vissza,
+.kviz-valasztas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eredmeny {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 input[type="checkbox"]{
     width: 30px;
 }
@@ -46,8 +69,8 @@ input[type="checkbox"]{
 .kviz-valasztas {
     height: 45px;
     width: 300px;
-    display: flexbox;
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
     color: white;
     background-color: black;
     border-radius: 25px;
@@ -179,14 +202,6 @@ h1 {
     display: none;
 }
 
-button {
-    display: grid;
-    text-align: center;
-    align-items: center;
-    grid-template-columns: 1fr;
-    
-}
-
 @media (min-width: 400px) {
     .kontener {
         padding: 20px;
@@ -197,12 +212,17 @@ button {
         gap: 20px;
     }
 
+    .kviz-valasztas {
+        height: 65px;
+        font-size: 1.2rem;
+    }
+
     body {
         font-size: 1.3rem;
     }
 
     #darkMode {
-        height: 75px;
+        height: 65px;
         width: 130px;
     }
 }
