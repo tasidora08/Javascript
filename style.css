@@ -43,6 +43,24 @@ body {
     justify-items: center;
 }
 
+#tizenot,
+#tiz, 
+#ot {
+    border: 5px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+} 
+
+#tizenot>p,
+#tiz>p,
+#ot>p {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
 #ujra,
 #vissza,
 .kviz-valasztas {
