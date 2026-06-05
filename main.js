@@ -138,47 +138,32 @@ function matekKerdeseketGeneral(mennyiseg = 10) {
     const generaltKerdesek = [];
 
     for (let i = 0; i < mennyiseg; i++) {
-        // Véletlenszerű műveleti jel kiválasztása
         const muvelet = muveletek[Math.floor(Math.random() * muveletek.length)];
-        
         let num1, num2, helyesValasz;
-
-        // Számok generálása a művelet típusától függően
         if (muvelet === '*') {
-            num1 = Math.floor(Math.random() * 10) + 1; // 1-10 közötti szám
+            num1 = Math.floor(Math.random() * 10) + 1;
             num2 = Math.floor(Math.random() * 10) + 1;
             helyesValasz = num1 * num2;
         } else if (muvelet === '/') {
-            // Osztásnál trükközünk, hogy ne kapjunk tizedesjegyeket:
-            // Generálunk egy osztót és egy eredményt, a kettő szorzata lesz az osztandó
-            num2 = Math.floor(Math.random() * 9) + 2;  // 2-10 közötti osztó
-            helyesValasz = Math.floor(Math.random() * 10) + 1; // 1-10 közötti egész eredmény
-            num1 = num1 = num2 * helyesValasz; // Az osztandó (pl. 40 / 8 = 5)
+            num2 = Math.floor(Math.random() * 9) + 2;
+            helyesValasz = Math.floor(Math.random() * 10) + 1; 
+            num1 = num1 = num2 * helyesValasz; 
         } else {
-            // Összeadás és kivonás
-            num1 = Math.floor(Math.random() * 90) + 10; // 10-99 közötti szám
+            num1 = Math.floor(Math.random() * 90) + 10; 
             num2 = Math.floor(Math.random() * 90) + 10;
             helyesValasz = muvelet === '+' ? num1 + num2 : num1 - num2;
         }
 
-        // Hibás válaszok generálása (véletlenszerű számok a helyes válasz közelében)
         const valaszokSet = new Set([helyesValasz.toString()]);
         
         while (valaszokSet.size < 4) {
-            // Generálunk egy kis eltérést (-10 és +10 között), de az ne legyen 0
             const elteres = Math.floor(Math.random() * 21) - 10;
             const hibasValasz = helyesValasz + elteres;
-            
-            // Csak akkor adjuk hozzá, ha pozitív szám (kivéve kivonásnál, ha lehet negatív)
             if (hibasValasz !== helyesValasz) {
                 valaszokSet.add(hibasValasz.toString());
             }
         }
-
-        // A Set-ből tömböt csinálunk, majd összekeverjük a válaszokat
         const valaszok = Array.from(valaszokSet).sort(() => Math.random() - 0.5);
-
-        // Beküldjük a kész objektumot a tömbbe
         generaltKerdesek.push({
             kerdes: `Mennyi ${num1} ${muvelet} ${num2}?`,
             valaszok: valaszok,
